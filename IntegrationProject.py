@@ -9,9 +9,22 @@ def quizStart():
     global userName
     userName = input("Welcome! What is your name? : ")
     easterEggFn()
+    nameIsInt()
 
 
-# ummmm no?
+# Just says if the users name in a number...
+def nameIsInt():
+    try:
+        val = int(userName)
+    except ValueError:
+        userNameInt = False
+    else:
+        userNameInt = True
+    if userNameInt == True:
+        print("Your name is a number... okay...")
+
+
+# ummmm no
 def easterEggFn():
 
     if userName in("No", "no"):
@@ -62,11 +75,11 @@ def favNumFn():
         print("Add them together and that is:", addFav)
         print("Wow, that's my favorite number,", userName, "that's crazy!")
     else:
-        # Restarts if bot were not ints
+        # Restarts if both were not ints
         favNumFn()
 
 
-# This function determines which number is smaller
+# This function determines which number is smaller for the getNums() function
 def getSmaller(num1, num2):
 
     if num1 < num2:
