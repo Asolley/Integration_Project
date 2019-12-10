@@ -11,7 +11,7 @@ def quizStart():
     easterEggFn()
 
 
-# Random easter egg function, looked messy to have it in the quizStart function :)
+# ummmm no?
 def easterEggFn():
 
     if userName in("No", "no"):
