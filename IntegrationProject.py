@@ -28,7 +28,7 @@ def nameIsInt():
 def easterEggFn():
 
     if userName in("No", "no"):
-        easterEgg = input("Well, do you want to know my name?")
+        easterEgg = input("Well, do you want to know my name? ")
         if easterEgg in("No", "no"):
             print("Fine!")
             quizStart()
@@ -122,23 +122,7 @@ def getNums():
         # Restarts if bot were not ints
         getNums()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        
 # Calling the game functions here.
 quizStart()
 favNumFn()
