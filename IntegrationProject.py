@@ -1,6 +1,7 @@
 # Andrew Solley
 # Integration Project Quiz game.
 
+#The functions are called at the bottom
 
 # Start of the game function.
 def quizStart():
