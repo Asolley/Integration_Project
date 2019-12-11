@@ -1,7 +1,6 @@
 # Andrew Solley
 # Integration Project Quiz game.
 
-#The functions are called at the bottom
 
 # Start of the game function.
 def quizStart():
@@ -123,8 +122,17 @@ def getNums():
         # Restarts if bot were not ints
         getNums()
 
-        
+
+def sayYourName():
+    print("I can say your name a bunch of time look!")
+    x = 0
+    while (x < 20):
+        print(userName)
+        x = x + 1
+
+
 # Calling the game functions here.
 quizStart()
 favNumFn()
 getNums()
+sayYourName()
